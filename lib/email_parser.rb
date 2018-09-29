@@ -11,13 +11,10 @@ class EmailParser
     @email= email 
   end 
   
-  def parse 
-    email_arr = []
-    
-    if 
-    
-    
-    email_arr.uniq
+def parse 
+    email.split.collect do |name|
+      name.split(',') 
+    end.flatten.uniq 
   end 
   
   
